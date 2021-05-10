@@ -1,0 +1,12 @@
+.contador{
+  padding: 10px;
+  background-color: #ddd;
+  color: black;
+  border-radius: 10px;
+  width: 20rem;
+  margin: 1rem auto;
+}
+
+.contador input{
+  height: 1.7rem;
+}
