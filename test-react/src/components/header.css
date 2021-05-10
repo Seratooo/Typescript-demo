@@ -1,0 +1,21 @@
+.Header{
+  background-color: #c4c4c4;
+}
+.Header .content{
+  display: flex;
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+  align-items: center;
+}
+.lista {
+  display: flex;
+  margin: 0 auto;
+}
+
+.List{
+  font-size: 1.2rem;
+  color: blue;
+  display: flex;
+  padding:  15px;
+}

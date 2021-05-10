@@ -1,0 +1,11 @@
+body{
+  background-color: #444444;
+  color: white;
+  text-align: center;
+  font-family: monospace;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
