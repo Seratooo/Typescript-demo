@@ -18,4 +18,9 @@ ts-node-dev --respawn --transpile-only server.ts
 
 Função - os
 setInterval
+events
+fs
+path
+
+JSON.stringify()
 
