@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev":"ts-node-dev --respawn --transpile-only src/logger.ts"
+    "dev":"ts-node-dev --respawn --transpile-only http/server.ts"
   },
   "devDependencies": {
     "ts-node-dev": "^1.1.6",

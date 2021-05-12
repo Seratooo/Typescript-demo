@@ -1,25 +1,21 @@
 import http from 'http'
+import data from './dados.json'
 import fs from 'fs'
 import path from 'path'
+import URL from 'url'
 
+function writeOnFile(cb:Function){
+    fs.writeFile(
+        path.join(__dirname,"dados.json"),
+        JSON.stringify(data,null,2),
+        err => {
+        if(err) throw err
 
-http.createServer((req, res) => {
+        cb(JSON.stringify({message: "Ok"}))
+    })
+}
 
-    const file = req.url === '/' ? 'index.html' : req.url
-    const filePath = path.join(__dirname, 'public', file)
-    const extname = path.extname(filePath)
+http.createServer((req,res)=>{
+    console.log(URL.URL)
 
-    const allowedFileTypes = ['.html', '.css', '.js']
-    const allowed = allowedFileTypes.find(item => item == extname)
-
-    if(!allowed) return
-
-    fs.readFile(
-        filePath,
-        (err, content) => {
-            if(err) throw err
-
-            res.end(content)
-        }
-    )
-}).listen(5000, () => console.log('Server is running')) 
+}).listen(5000)
