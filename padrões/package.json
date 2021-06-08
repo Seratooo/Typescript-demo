@@ -1,0 +1,17 @@
+{
+  "scripts":{
+  "singleton":"ts-node-dev --respawn --transpile-only Singleton/db/my-database.ts",
+  "factory":"ts-node-dev --respawn --transpile-only FactoryMethod/index.ts",
+  "adapter":"ts-node-dev --respawn --transpile-only Adapter/index.ts",
+  "a-factory":"ts-node-dev --respawn --transpile-only AbstracFactory/index.ts"
+
+},
+  
+  "devDependencies":{
+    "@types/validator":"^13.1.3",
+    "ts-node-dev":"^1.1.6"
+  },
+    "dependencies":{
+      "validator":"^13.6.0"
+      }
+}
